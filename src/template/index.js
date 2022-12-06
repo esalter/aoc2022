@@ -4,21 +4,25 @@ const parseInput = (rawInput) => rawInput.split('\n');
 
 const part1 = (rawInput) => {
   const input = parseInput(rawInput);
+  console.log('input', input);
 
   return;
 };
 
 const part2 = (rawInput) => {
   const input = parseInput(rawInput);
+  console.log('input', input);
 
   return;
 };
+
+let input = ``;
 
 run({
   part1: {
     tests: [
       {
-        input: ``,
+        input,
         expected: '',
       },
     ],
@@ -27,12 +31,12 @@ run({
   part2: {
     tests: [
       {
-        input: ``,
+        input,
         expected: '',
       },
     ],
     solution: part2,
   },
-  trimTestInputs: true,
-  onlyTests: false,
+  trimTestInputs: false,
+  onlyTests: true,
 });
