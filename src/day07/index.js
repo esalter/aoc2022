@@ -62,10 +62,10 @@ const buildTree = (tree, line) => {
 
       break;
     case 'dir':
+      // we got a dir, add it to the tree IF it doesn't already exist
       ensureTreeDir(tree, _.concat(tree.cwd, [line.dir]));
       break;
     case 'file':
-      // we got a dir, add it to the tree IF it doesn't already exist
       let existingFiles = _.get(tree, _.concat(cwd, ['_files']));
       existingFiles.push(line);
       break;
