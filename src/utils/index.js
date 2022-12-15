@@ -23,8 +23,6 @@
  *     import { myUtil } from '../utils'
  */
 
-import { hasUncaughtExceptionCaptureCallback } from 'process';
-
 export function makeGrid(rows, columns, fillWith = undefined) {
   // fill grid with 0's
   let grid = new Array(rows);
@@ -39,6 +37,9 @@ export function makeGrid(rows, columns, fillWith = undefined) {
 }
 
 export function addGridItem(grid, i, j, item, fillWith = undefined) {
+  if (grid == null) {
+    grid = makeGrid(i + 1, j + 1, fillWith);
+  }
   // these are 0-based, so must be at least 1 + that number
   extendGrid(grid, { rows: i + 1, columns: j + 1 }, fillWith);
 
