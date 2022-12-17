@@ -2,7 +2,6 @@ import run from 'aocrunner';
 import { addGridItem, makeGrid } from '../utils/index.js';
 import stringify from 'json-stringify-pretty-compact';
 import _ from 'lodash';
-import { exit } from 'process';
 
 const parseInput = (rawInput) => {
   let rows = 0;
@@ -30,7 +29,6 @@ const parseInput = (rawInput) => {
 };
 
 const drawLine = (grid, start, end) => {
-  // console.log('drawing line from start/end', start, end);
   if (start[0] === end[0]) {
     if (start[1] > end[1]) {
       // try again reversing arg order
@@ -66,7 +64,6 @@ const buildRockMaze = (input) => {
 
       drawLine(grid, start, end);
     }
-    // console.log('grid after drawing segment', segment, stringify(grid));
   });
   return grid;
 };
@@ -154,10 +151,10 @@ const part1 = (rawInput) => {
     }
     numSand++;
   }
-  // draw(grid);
-  // let sandResult = dropSand(grid, undefined, undefined, true);
+  draw(grid);
+  let sandResult = dropSand(grid, undefined, undefined, true);
 
-  // draw(grid);
+  draw(grid);
 
   return numSand;
 };
@@ -206,5 +203,5 @@ run({
     solution: part2,
   },
   trimTestInputs: false,
-  onlyTests: false,
+  onlyTests: true,
 });

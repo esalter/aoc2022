@@ -136,7 +136,7 @@
         "solved": true,
         "result": "17180",
         "attempts": [],
-        "time": 0.191434
+        "time": 0.132801
       },
       "part2": {
         "solved": true,
@@ -146,7 +146,7 @@
           "REHPRLVB\"",
           "REHPRLVB"
         ],
-        "time": 1.382674
+        "time": 1.106802
       }
     },
     {
@@ -198,27 +198,27 @@
         "solved": true,
         "result": "897",
         "attempts": [],
-        "time": 26.796847
+        "time": 19.595197
       },
       "part2": {
         "solved": true,
         "result": "26683",
         "attempts": [],
-        "time": 179.06744
+        "time": 168.309452
       }
     },
     {
       "part1": {
-        "solved": false,
-        "result": null,
+        "solved": true,
+        "result": "5335787",
         "attempts": [],
-        "time": null
+        "time": 0.079132
       },
       "part2": {
-        "solved": false,
-        "result": null,
+        "solved": true,
+        "result": "13673971349056",
         "attempts": [],
-        "time": null
+        "time": 2553.076092
       }
     },
     {

@@ -1,5 +1,5 @@
 import run from 'aocrunner';
-import _ from 'lodash';
+import _, { xor } from 'lodash';
 
 const parseInput = (rawInput) =>
   rawInput.split('\n').map((p) =>
@@ -72,3 +72,16 @@ run({
   trimTestInputs: true,
   onlyTests: false,
 });
+
+  01234
+0   x
+1  xxx
+2 BxSSx
+3  xxx
+4   x
+5
+6
+7
+8
+9
+10
